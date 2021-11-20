@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<body>
+    <h1>HTML y JavaScript</h1>
+
+    <p>En esta lección haremos una breve introducción a HTML y JavaScript.</p>
+
+    <p>HTML es un lenguaje de marcado que define la estructura de una página web. En el HTML se usan etiquetas que comienzan con un &lt; y que terminan con un &gt;. Cada etiqueta se abre y se cierra, y mientras una etiqueta se abre de la forma previamente mencionada, se cierra comenzando con un &lt;/ y terminando con un &gt;. Las etiquetas más importantes son HTML, head, body, script y style. Dentro de la etiqueta HTML se encuentran todas las demás etiquetas. En la etiqueta head se encuentran las etiquetas que contienen metadatos (datos importantes sobre la página) y código que no debe ser visible. En la etiqueta body se encuentra todo el contenido visible de la página web. En la etiqueta script está el código JavaScript de la página y en la etiqueta style se encuentra todos los estilos y diseño de la página y los elementos de ella escritos en CSS.</y></p>
+    
+    <p>Mira el código que se encuentra dentro de la etiqueta script y haz pruebas con la consola de JavaScript. Abre la consola de JavaScript con Ctrl+Shift+I.</p>
+
+    <script>
+        // JavaScript es un lenguaje dinámico que se utiliza principalmente para agregarle funcionalidad 
+        // a una aplicación web. También tiene otros usos como la creación de videojuegos, el manejo del 
+        // servidor y todo lo que sea web. La sintaxis de JavaScript es similar a la de Java, donde se 
+        // utiliza () para encerrar condiciones y {} para encerrar argumentos de una función, además de 
+        // la opción de usar ; para terminar una línea de código. El comportamiento del lenguaje es similar 
+        // al de Python en el sentido de ser un lenguaje dinámico, ya que las variables no necesitan declararse 
+        // siendo enteros, cadenas de caracteres u otros. Haremos una breve introducción a la sintaxis de
+        // JavaScript.
+
+        // 1. Asignación y tipos de datos
+
+        // Cadena de caracteres (string)
+        const texto = "Este es el texto";
+        // Entero (int)
+        const entero = 5;
+        // Punto flotante (float)
+        const flotante = 30.0
+        // Lista (list)
+        const lista = ["primer elemento", 2, 3.0];
+        // Diccionario (dictionary)
+        const diccionario = {nombre:'David', apellido:'Quiroga', fecha: 1997, ciudad: 'Miami'}
+
+        var variable = "Lo mismo que const pero su contenido puede ser modificado";
+        var listaVariable = [1, 2,  3, 4];
+
+        let valor = listaVariable[2];
+        listaVariable[0] = valor;
+
+        // 2. Ciclo while
+        var index = 0
+        while (index<entero){
+            console.log("Iteración de while"+index);
+            index += 1;
+        }
+
+        // 3. Ciclo for
+        for (let index = 0; index < entero; index++) {
+            console.log("Iteración de for"+index);
+        }
+
+        // 4. Operaciones en una lista
+
+        // Para agregar un elemento al final de una lista se usa push(elemento)
+        listaVariable.push(5);
+
+        // Para eliminar un elemento del final de una lista se usa pop()
+        listaVariable.pop();
+
+        // Para agregar un elemento al inicio de una lista se usa unshift(elemento)
+        listaVariable.unshift(0);
+
+        // Para eliminar un elemento del final de una lista se usa shift()
+        listaVariable.shift();
+
+        // Para eliminar un elemento de una lista desde una posición o índice hasta otra posición se usa splice(indiceInicial, indiceFinal)
+        listaVariable.splice(1, 3);
+
+        // Ejercicio: Crea una lista llamada listaEjercicio y llenala con números enteros del 1 al 20 usando un ciclo while o for en la consola de JavaScript.
+        
+    </script>
+</body>
+</html>
