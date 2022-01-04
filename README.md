@@ -22,3 +22,5 @@ git clone https://github.com/Raijeku/javascript-course.git
 3. Abre la carpeta javascript-course.
 
 4. Abre el código en un editor de texto.
+
+Nota: si no tienes Git instalado, sigue las instrucciones en el enlace https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git bajo el título "Instalación en (tu sistema operativo)".
