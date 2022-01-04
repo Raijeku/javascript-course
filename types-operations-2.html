@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de datos y operaciones</h1>
+
+    <p>En esta lección abarcaremos los tipos de datos que existen en JavaScript y las operaciones que se pueden efectuar en variables de cada tipo de dato.</p>
+
+    <p>Mira el código que se encuentra dentro de la etiqueta script y haz pruebas con la consola de JavaScript. Abre la consola de JavaScript con Ctrl+Shift+I.</p>
+
+    <script>
+        // Al ser un lenguaje dinámico, en JavaScript no se necesita declarar una variable con un tipo de
+        // dato específico, pero es esencial aprender cuáles son, cómo usarlos y cómo convertir
+        // de un tipo de variable a otro. En JavaScript, así como en cualquier lenguaje de programación,
+        // existen diversos tipos de datos dentro de los cuales se encuentran tipos de datos propios del
+        // lenguaje y objetos de una clase (estos los veremos más adelante y por ahora nos referiremos a
+        // ellos como diccionarios). En la lección anterior vimos algunos ejemplos de variables y cómo
+        // declararlos. Ahora es un buen momento de repasar los tipos de datos que vimos en la sección
+        // "1. Asignación y tipos de datos", devuélvete y revisa las líneas de código que exploramos.
+
+        // 1. Tipos de datos
+        // Los tipos de datos que se utilizan en JavaScript son números, cadenas de caracteres, booleanos,
+        // símbolos, diccionarios, listas, indefinido y nulo.
+
+        // Number (Número)
+        // Los números pueden ser representados como enteros, enteros grandes o puntos flotantes. Ejemplos
+        // de este tipo de dato son:
+
+            // Int
+            // Representa números enteros menores a 2**53-1
+            const entero1 = 5;
+            const entero2 = Number(5.5);
+            const entero3 = Number.parseInt(25.0);
+
+            // Float
+            // Representa números decimales
+            const float1 = 5.0;
+            const float2 = Number(10.5);
+            const float3 = Number.parseFloat(40);
+
+            // BigInt
+            // Representa números enteros más grandes que 2**53-1
+            const enterogrande1 = BigInt(10000000000);
+            const enterogrande2 = 10000000000n;
+            const enterogrande3 = BigInt("10000000000");
+
+        // String (Cadena de caracteres)
+        // Las cadenas de caracteres representan una lista de caracteres, frases, números y palabras.
+        const cadena1 = "Esta es la cadena de caracteres, o texto";
+
+        // Boolean (Booleano)
+        // Los booleanos representan valores de verdad, siendo únicamente true (verdadero) o false (falso).
+        const booleano1 = true;
+        const booleano2 = false;
+
+        // Symbol (Símbolo)
+        // Los símbolos son tipos de datos únicos que contienen una llave que no se repite.
+        const simbolo1 = Symbol("llaveuno");
+        const simbolo2 = Symbol.for("llavedos");
+
+        // Nulo
+        // El nulo representa la ausencia de la identidad, y es un valor por defecto con el que se puede
+        // inicializar una variable.
+        const nulo1 = null;
+
+        // Indefinido
+        // El indefinido representa la ausencia de información, y es el resultado de acceder a una llave
+        // vacía de un diccionario.
+
+        // 2. Operaciones
+        // Cada uno de los tipos de datos vistos tienen operaciones que se pueden realizar con ellos.
+
+        // Number (Número)
+        // Los números pueden realizar cualquiera de las siguientes operaciones tanto en enteros como en puntos flotantes.
+
+            // Suma
+            const suma = float1 + entero1;
+
+            // Resta
+            const resta = entero1 - entero2;
+
+            // Multiplicación
+            const mult = float3 * entero1;
+
+            // División
+            const div = float3 / entero1;
+
+            // Residuo
+            const res = float2 % entero1;
+
+            // Exponenciación
+            const exp = entero1 ** entero2;
+
+            // Comparación
+            const mayor = float2 > float1;
+            const igualNum = entero1 == entero2;
+
+        // String (Cadena de caracteres)
+        // Las cadenas de caracteres usan unos pocos símbolos iguales a las operaciones en números pero con
+        // una funcionalidad diferente.
+
+            // Concatenación
+            // Junta dos cadenas de caracteres
+            const concat = cadena1 + cadena1;
+
+            // Comparación
+            // Compara las cadenas de caracteres en orden alfabético
+            const menorIgual = cadena1 <= cadena1;
+            const igualString = cadena1 == cadena1;
+
+        // Boolean (Booleano)
+        // Los booleanos también pueden representar 1 y 0 con los valores verdadero y falso, respectivamente,
+        // por lo que también se pueden usar las operaciones de los números enteros. Además se usan operadores
+        // lógicos (correspondientes a la lógica preposicional).
+
+            // Negación
+            const neg = !booleano1
+
+            // Conjunción
+            const conj = booleano1 && booleano2
+
+            // Disyunción
+            const disy = booleano1 || booleano2
+
+        // Indefinido
+        // Se recomienda no usar operaciones en indefinido
+
+        // Null
+        // Se recomienda no usar operaciones en nulos
+        
+        // Ejercicio: Muestra cada variable en la consola para observar los efectos de las operaciones si no lo has hecho ya, e intenta usar una suma entre una cadena de caracteres y un entero. En la siguiente lección discutiremos el resultado.
+
+        // Referencias
+        // https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures - Tipos de datos y estructuras en JavaScript - JavaScript | MDN
+        // https://www.geeksforgeeks.org/bigint-in-javascript/ - BigInt in JavaScript - GeeksforGeeks
+        // https://alligator.io/js/js-data-types/ - Data Types in JavaScript <- Alligator.io
+        // https://www.w3schools.com/js/js_comparisons.asp - JavaScript Comparison and Logical Operators
+
+    </script>
+</body>
+</html>

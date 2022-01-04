@@ -4,7 +4,8 @@ En este curso se abarca el lenguaje JavaScript desde su base, asumiendo un conoc
 
 ## Contenido
 
-1. introduction.html: Se realiza una breve introducción a HTML y JavaScript.
+1. introduction-1.html: Se realiza una breve introducción a HTML y JavaScript.
+2. types-operations-2.html: Se abarcan los tipos de datos que existen en JavaScript y las operaciones que se pueden efectuar en variables de cada tipo de dato.
 
 ## Instrucciones de uso
 
